@@ -29,7 +29,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-sm-6">
                                     <div class="logo">
-                                        <h1>{{ Str::title(auth()->user()->store_name) }}</h1>
+                                        <h1>Garasale Css</h1>
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-sm-6">
@@ -94,13 +94,13 @@
                                                     {{ $item->product->name }}
                                                 </td>
                                                 <td class="align-middle text-center">
-                                                    {{ Number::currency($item->unitcost, 'EUR') }}
+                                                    {{ Number::currency($item->unitcost, 'USD') }}
                                                 </td>
                                                 <td class="align-middle text-center">
                                                     {{ $item->quantity }}
                                                 </td>
                                                 <td class="align-middle text-center">
-                                                    {{ Number::currency($item->total, 'EUR') }}
+                                                    {{ Number::currency($item->total, 'USD') }}
                                                 </td>
                                             </tr>
                                         @endforeach
@@ -113,7 +113,7 @@
                                             </td>
                                             <td class="align-middle text-center">
                                                 <strong>
-                                                    {{ Number::currency($order->sub_total, 'EUR') }}
+                                                    {{ Number::currency($order->sub_total, 'USD') }}
                                                 </strong>
                                             </td>
                                         </tr>
@@ -123,7 +123,7 @@
                                             </td>
                                             <td class="align-middle text-center">
                                                 <strong>
-                                                    {{ Number::currency($order->vat, 'EUR') }}
+                                                    {{ Number::currency($order->vat, 'USD') }}
                                                 </strong>
                                             </td>
                                         </tr>
@@ -133,7 +133,7 @@
                                             </td>
                                             <td class="align-middle text-center">
                                                 <strong>
-                                                    {{ Number::currency($order->total, 'EUR') }}
+                                                    {{ Number::currency($order->total, 'USD') }}
                                                 </strong>
                                             </td>
                                         </tr>
